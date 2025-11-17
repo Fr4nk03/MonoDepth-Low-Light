@@ -1,0 +1,18 @@
+# Bytecode and cache files
+__pycache__/
+*.pyc
+
+# Virtual environments (common folders)
+.venv/
+venv/
+env/
+
+# IDE files (common for VS Code)
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
