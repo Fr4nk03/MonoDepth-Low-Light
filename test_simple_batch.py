@@ -166,7 +166,7 @@ def test_simple(args):
 
                 # Saving numpy file
                 output_name = os.path.splitext(os.path.basename(image_path))[0]
-                scaled_disp, depth = disp_to_depth(disp_i, 0.1, 100)
+                scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
                 if args.pred_metric_depth:
                     name_dest_npy = os.path.join(output_directory, "{}_depth.npy".format(output_name))
                     metric_depth = STEREO_SCALE_FACTOR * depth.cpu().numpy()
